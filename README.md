@@ -5,4 +5,5 @@ We've all seen Andrej Karpathy's famous (or infamous!) minigpt project at https:
 
 Here we're building a simple and fast implementation of miniGPT that will reproduce GPT-2 level using rust.  The aim is to build something that can iterate the training loop fast in as little lines of code as possible.  Lets go!!
 
+Note: Still learning Rust, so any comments, improvements, or criticisms are welcome!
 
