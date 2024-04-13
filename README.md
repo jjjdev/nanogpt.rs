@@ -6,6 +6,9 @@ Here we're building a simple and fast implementation of miniGPT that will reprod
 
 Note: Still learning Rust, so any comments, improvements, or criticisms are welcome!
 
+## Dependencies
+This uses the Rust bindings for the C++ api for PyTorch.  This in turn requires the C++ PyTorch library (libtorch) in version v2.2.0 to be available on your system.  The instructions and code for setup can be found here: https://github.com/LaurentMazare/tch-rs 
+
 ## Links and Resources
 - Attention is All You Need paper: https://arxiv.org/abs/1706.03762
 - OpenAI GPT-3 paper: https://arxiv.org/abs/2005.14165 
