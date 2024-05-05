@@ -7,7 +7,10 @@ Here we're building a simple and fast implementation of miniGPT that will reprod
 Note: Still learning Rust, so any comments, improvements, or criticisms are welcome!
 
 ## Dependencies
-This uses the Rust bindings for the C++ api for PyTorch.  This in turn requires the C++ PyTorch library (libtorch) in version v2.2.0 to be available on your system.  The instructions and code for setup can be found here: https://github.com/LaurentMazare/tch-rs 
+This uses the HuggingFace Candle library - a minimalist Rust ML library that is made to look and feel like pytorch!  The instructions and code for setup can be found here: https://github.com/huggingface/candle. 
+
+Note: I initially wanted to use the rust bindings for the C++ API for this [(tch-rs)](https://github.com/LaurentMazare/tch-rs), but it imports the entire pytorch library into the runtime :()
+
 
 ## Links and Resources
 - Attention is All You Need paper: https://arxiv.org/abs/1706.03762
