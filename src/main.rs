@@ -21,7 +21,7 @@ fn main() {
     //println!("input.txt content=\n{:?}", file_contents);
 
     // Get the unique characters in the dataset
-    let text = file_contents.unwrap();
+    let mut text = file_contents.unwrap();
     let mut chars: Vec<char> = text.chars().collect();
     chars.sort();
     chars.dedup();
@@ -33,9 +33,17 @@ fn main() {
     let int_to_str: HashMap<usize, char> = str_to_int.iter().map(|(ch, i)| (*i, *ch)).collect();
 
     // 3) Encode the dataset
+    let mut encoded_text = encode(&str_to_int);
+    println!("Encoded text: {:?}", encoded_text);
 
+    let decoded_text = decode(&int_to_str);
+    println!("Decoded text: {:?}", decoded_text);
+
+
+    data = Tensor::new(encoded_text, &Device::Cpu);
 
     // 4) Test/train validation split
+    // 4b) Batchify the dataset
 
 
     // 5) Build simple BigramModel (to start and learn)
