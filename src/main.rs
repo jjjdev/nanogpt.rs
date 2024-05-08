@@ -7,6 +7,9 @@ the libraries to use::
 3) cuda bindings for rust to use GPU
 */
 
+mod model;
+mod config;
+
 use std::collections::HashMap;
 use candle_core::{Device, Result, Tensor};
 use std::fs;
